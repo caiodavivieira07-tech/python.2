@@ -1,0 +1,7 @@
+n1=int(input("Digite um valor"))
+n2=int(input("Digite outro valor"))
+print ('("1 - Somar")')
+print ('("2 - Subtrair")')
+print ('("3 - Multiplicar")')
+print ('("4 - Dividir")')
+e=input("Digite uma das opcões ")
