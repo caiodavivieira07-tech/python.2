@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dungeon Delvers - Lista de espera</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="topo">
+
+  <header>
+    <h1>Dungeon Delvers</h1>
+    <p>Enfrente a Dungeon. Salve o Reino.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="edicoes.html">Edições</a></li>
+      <li><a href="reserva.html">Lista de espera</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="lista-de-espera">
+      <h2>Entre na lista de espera</h2>
+      <p>Seja avisado assim que Dungeon Delvers for lançado — sem spam, só o essencial.</p>
+
+      <form action="#" method="post" class="form-lista-espera">
+
+        <div class="campo">
+          <label for="nome">Nome</label>
+
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Como podemos te chamar?"
+            required
+          >
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="seuemail@exemplo.com"
+            required
+          >
+        </div>
+
+        <div class="campo">
+          <label for="telefone">Telefone (opcional)</label>
+          <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            placeholder="(21) 90000-0000"
+          >
+        </div>
+
+        <div class="campo">
+          <label for="idade">Idade</label>
+          <input
+            type="number"
+            id="idade"
+            name="idade"
+            min="10"
+            max="120"
+            placeholder="Sua idade"
+          >
+        </div>
+
+        <button type="submit">Entrar na lista de espera</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Dungeon Delvers — projeto de exemplo do curso</p>
+  </footer>
+
+  <a href="#topo" class="voltar-ao-topo" title="Voltar ao topo">&uarr;</a>
+
+</body>
+</html>

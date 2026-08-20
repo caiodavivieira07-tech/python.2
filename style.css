@@ -1,51 +1,230 @@
-  h1 {
-    color: aliceblue;
-    font-size: 100px;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Jersey+15&display=swap');
 
-  h2 {
-    color: #094c92;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+/* :root {
+  --preto: #222;
+  --vermelho: #a22;
+  --branco: #f4f4f4;
+  --cinza: #d9d9d9;
+}
+ */
 
-  p {
-    font-family: Arial, Helvetica, sans-serif;
-  }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  margin: 0;
+}
 
-  img {
-    border-radius: 100px;
-    border: 5px solid black;
-  }
+#logotipo {
+  max-width: 400px;
+  margin: 0 auto;
+}
 
-  section {
-    border: 2px solid aliceblue;
-    margin: 50px;
-    padding: 60px;
-  }
+header {
+  background-color: #202020;
+  color: #f4f4f4;
+  padding: 20px;
+  border-bottom: 4px solid #a22;
+  text-align: center;
+}
 
-  nav {
-    background-color: aliceblue;
-    padding: 10px;
-  }
+header p {
+  font-family: "Jacquard 24";
+  font-size: xx-large;
+}
 
-  nav ul {
-    list-style-type: nome;
-    margin: 0;
-    padding: 0;
-  }
+header h1 {
+  margin: 0 0 5px 0;
+}
 
-  nav li {
-    display: inline-block;
-    margin-right: 15px;
-  }
+/* position: sticky. Fica "relative" até rolar a página até o topo do elemento, depois gruda como "fixed". */
+nav {
+  background-color: #d9d9d9;
+  padding: 10px 20px;
+  font-family: "Jacquard 24";
+  font-size: xx-large;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
 
-  header {
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
-    background-color: #094c92;
-    padding: 25px;
-    border-bottom: 5px solid black;
-  }
+nav li {
+  display: inline-block;
+  margin-right: 15px;
+}
 
-  header p {
-    color: white;
-  }
+nav a {
+  text-decoration: none;
+  color: #2b3a55;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: #2b3a55;
+  color: #ffffff;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section h2 {
+  border-left: 5px solid #2b3a55;
+  padding-left: 10px;
+}
+
+article {
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+
+video {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+/* Tabela de edições (Aula 4) — tudo estilizado via classes,
+   pra já acostumar o olho com o padrão que o Bootstrap usa mais pra frente. */
+.tabela-edicoes {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.tabela-edicoes caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tabela-edicoes th,
+.tabela-edicoes td {
+  border: 1px solid #cccccc;
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.tabela-edicoes thead th {
+  background-color: #202020;
+  color: #f4f4f4;
+}
+
+.tabela-edicoes th[scope="row"] {
+  text-align: left;
+  background-color: #f0f0f0;
+}
+
+.destaque {
+  background-color: #f7dede;
+  font-weight: bold;
+}
+
+.disponivel {
+  color: #227722;
+}
+
+.indisponivel {
+  color: #999999;
+}
+
+footer {
+  background-color: #a22;
+  color: #f4f4f4;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+/* .tabela-edicoes th.destaque {
+  position: relative;
+} */
+
+/* .badge-popular {
+  position: absolute;
+  top: -10px;
+  right: -6px;
+  background-color: #a22;
+  color: #ffffff;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 3px 8px;
+  border-radius: 10px;
+  transform: rotate(6deg);
+} */
+
+/* EXTRA (buffer) — position: fixed.
+   Não sai do lugar na tela mesmo rolando a página, porque a referência é a janela, não o documento. */
+.voltar-ao-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #202020;
+  color: #f4f4f4;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* Aula 5 */
+.form-lista-espera {
+  max-width: 420px;
+  margin-top: 15px;
+}
+
+.campo {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-lista-espera label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-lista-espera input {
+  padding: 8px 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-lista-espera input:focus {
+  outline: none;
+  border-color: #a22;
+}
+
+.form-lista-espera input:invalid:not(:placeholder-shown) {
+  border-color: #cc4444;
+}
+
+.form-lista-espera button {
+  background-color: #a22;
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-lista-espera button:hover {
+  background-color: #7a1a1a;
+}
+
+/* footer a {
+  color: #ffd9c7;
+} */
