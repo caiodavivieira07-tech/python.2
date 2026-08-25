@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronFit Academia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="inicio">
+        <h1>IronFit Academia</h1>
+        <p>Supere seus limites. Construa sua melhor versão.</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#planos">Planos</a>
+        <a href="#contato">Contato</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+    </nav>
+
+    <main>
+
+        <section id="sobre">
+            <h2>Sobre a IronFit</h2>
+
+            <p>
+                A IronFit é uma academia criada para pessoas que querem
+                cuidar da saúde, melhorar o condicionamento físico e
+                praticar exercícios em um ambiente moderno e acolhedor.
+            </p>
+
+            <p>
+                Temos equipamentos modernos, diferentes modalidades e
+                profissionais preparados para ajudar cada aluno a evoluir
+                com segurança.
+            </p>
+        </section>
+
+        <section id="multimidia">
+            <h2>Conheça nossa academia</h2>
+
+            <img
+                src="imagem01.png"
+                alt="Área de musculação da academia IronFit com equipamentos modernos"
+                width="800"
+                height="500"
+            >
+
+            <p>
+                Um espaço completo para você praticar exercícios e cuidar
+                da sua saúde.
+            </p>
+        </section>
+
+        <section id="planos">
+            <h2>Compare nossos planos</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="4">Planos IronFit</th>
+                    </tr>
+                    <tr>
+                        <th>Plano</th>
+                        <th>Acesso</th>
+                        <th>Aulas</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Start</td>
+                        <td>Segunda a sexta</td>
+                        <td>Não incluídas</td>
+                        <td>R$ 79,90</td>
+                    </tr>
+
+                    <tr>
+                        <td>Plus</td>
+                        <td>Todos os dias</td>
+                        <td>Algumas modalidades</td>
+                        <td>R$ 109,90</td>
+                    </tr>
+
+                    <tr>
+                        <td>Premium</td>
+                        <td>Todos os dias</td>
+                        <td>Todas as modalidades</td>
+                        <td>R$ 149,90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contato">
+            <h2>Quero conhecer a IronFit</h2>
+
+            <form action="#" method="post">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="idade">Faixa etária:</label>
+                <select id="idade" name="idade">
+                    <option value="">Selecione</option>
+                    <option value="13-17">13 a 17 anos</option>
+                    <option value="18-29">18 a 29 anos</option>
+                    <option value="30-49">30 a 49 anos</option>
+                    <option value="50+">50 anos ou mais</option>
+                </select>
+
+                <fieldset>
+                    <legend>Qual seu principal objetivo?</legend>
+
+                    <label>
+                        <input type="radio" name="objetivo" value="saude">
+                        Melhorar a saúde
+                    </label>
+
+                    <label>
+                        <input type="radio" name="objetivo" value="condicionamento">
+                        Melhorar o condicionamento
+                    </label>
+
+                    <label>
+                        <input type="radio" name="objetivo" value="forca">
+                        Desenvolver força
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>O que você gostaria de conhecer?</legend>
+
+                    <label>
+                        <input type="checkbox" name="interesse" value="musculacao">
+                        Musculação
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interesse" value="aulas">
+                        Aulas coletivas
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interesse" value="planos">
+                        Planos
+                    </label>
+                </fieldset>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="5"
+                    placeholder="Escreva sua mensagem..."
+                ></textarea>
+
+                <button type="submit">Quero saber mais</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 IronFit Academia. Todos os direitos reservados.</p>
+        <p>
+            <a href="#inicio">Voltar ao início</a> |
+            <a href="#contato">Contato</a>
+        </p>
+    </footer>
+
+</body>
+</html>
