@@ -1,189 +1,187 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+/*
+============================================================
+DESAFIO — CSS
+============================================================
 
-html {
-    scroll-behavior: smooth;
-}
+Crie uma identidade visual para a página.
+
+REQUISITOS OBRIGATÓRIOS
+------------------------------------------------------------
+
+1. Defina uma cor de fundo para a página.
+
+2. Escolha uma família tipográfica.
+
+3. Defina uma aparência para os títulos.
+
+4. Personalize o cabeçalho .topo.
+
+5. Personalize a navegação .menu.
+
+6. Crie uma aparência visual para .obra.
+
+7. Faça as imagens da galeria ocuparem adequadamente
+   o espaço disponível.
+
+8. Crie espaçamento adequado entre as seções.
+
+9. Personalize os links.
+
+10. Crie um efeito :hover para os links da navegação.
+
+11. Personalize o formulário.
+
+12. Personalize o botão do formulário.
+
+13. Personalize o rodapé.
+
+REGRAS
+------------------------------------------------------------
+
+- Não é necessário reproduzir um design específico.
+- Escolha sua própria identidade visual.
+- Evite criar CSS para algo que o Bootstrap já resolve bem.
+- Evite utilizar Bootstrap apenas por utilizar.
+- Teste suas decisões visualmente.
+
+DESAFIO EXTRA
+------------------------------------------------------------
+
+Utilize pelo menos uma propriedade CSS que ainda não tenha
+sido utilizada durante as aulas.
+
+Explique em um comentário qual foi a propriedade e por que
+você decidiu utilizá-la.
+
+============================================================
+*/
+
+
+/* ==========================================================
+   CONFIGURAÇÕES GERAIS
+   ========================================================== */
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f2f2f2;
-    color: #222;
-    line-height: 1.6;
+    /* Sua configuração */
 }
 
-header {
-    background-color: #111;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
+
+/* ==========================================================
+   CABEÇALHO
+   ========================================================== */
+
+.topo {
+    /* Sua configuração */
 }
 
-header h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+
+/* ==========================================================
+   MENU
+   ========================================================== */
+
+.menu {
+    /* Sua configuração */
 }
 
-header p {
-    font-size: 20px;
+.menu a {
+    /* Sua configuração */
 }
 
-nav {
-    background-color: #e63946;
-    padding: 15px;
-    text-align: center;
-    position: sticky;
-    top: 0;
+.menu a:hover {
+    /* Sua configuração */
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
+
+/* ==========================================================
+   ÁREA PRINCIPAL
+   ========================================================== */
+
+#inicio {
+    /* Sua configuração */
 }
 
-nav a:hover {
-    text-decoration: underline;
+#obras {
+    /* Sua configuração */
 }
 
-main {
-    max-width: 1000px;
-    margin: auto;
+#sobre {
+    /* Sua configuração */
 }
 
-section {
-    background-color: white;
-    margin: 30px 0;
-    padding: 35px;
-    border-radius: 10px;
+.informacao {
+    /* Sua configuração */
 }
 
-section h2 {
-    color: #e63946;
-    margin-bottom: 20px;
-    font-size: 28px;
+#contato {
+    /* Sua configuração */
 }
 
-section p {
-    margin-bottom: 15px;
+
+/* ==========================================================
+   OBRAS
+   ========================================================== */
+
+.obra {
+    /* Sua configuração */
 }
 
-#multimidia img {
-    display: block;
-    width: 100%;
-    max-width: 800px;
-    height: 500px;
-    object-fit: cover;
-    margin: 20px auto;
-    border-radius: 8px;
+.obra img {
+    /* Sua configuração */
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+.obra h3 {
+    /* Sua configuração */
 }
 
-th,
-td {
-    border: 1px solid #ccc;
-    padding: 15px;
-    text-align: center;
-}
 
-th {
-    background-color: #111;
-    color: white;
-}
+/* ==========================================================
+   FORMULÁRIO
+   ========================================================== */
 
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    /* Sua configuração */
 }
 
-input,
-select,
-textarea {
-    padding: 12px;
-    border: 1px solid #bbb;
-    border-radius: 5px;
-    font-size: 16px;
+form div {
+    /* Sua configuração */
 }
 
-fieldset {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px;
-    margin-top: 10px;
+form label {
+    /* Sua configuração */
 }
 
-fieldset label {
-    display: block;
-    margin: 8px 0;
+form input,
+form textarea {
+    /* Sua configuração */
 }
 
-fieldset input {
-    margin-right: 8px;
+form button {
+    /* Sua configuração */
 }
 
-button {
-    background-color: #e63946;
-    color: white;
-    border: none;
-    padding: 14px;
-    border-radius: 5px;
-    font-size: 17px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 10px;
+form button:hover {
+    /* Sua configuração */
 }
 
-button:hover {
-    background-color: #c92f3c;
+
+/* ==========================================================
+   RODAPÉ
+   ========================================================== */
+
+.rodape {
+    /* Sua configuração */
 }
 
-footer {
-    background-color: #111;
-    color: white;
-    text-align: center;
-    padding: 30px;
-    margin-top: 30px;
+.rodape a {
+    /* Sua configuração */
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
-}
 
-footer a:hover {
-    text-decoration: underline;
-}
+/*
+============================================================
+ESPAÇO LIVRE
 
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 32px;
-    }
+Se precisar criar novas regras CSS, faça isso abaixo.
 
-    nav a {
-        display: inline-block;
-        margin: 5px;
-    }
-
-    section {
-        margin: 15px 10px;
-        padding: 25px 20px;
-    }
-
-    #multimidia img {
-        height: 300px;
-    }
-
-    table {
-        font-size: 14px;
-    }
-}
+============================================================
+*/
